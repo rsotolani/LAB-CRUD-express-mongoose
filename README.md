@@ -121,14 +121,14 @@ A rota deve:
 Essa rota irá receber requests contendo o objeto com as informações da _purchase_:
 
 - `shippingAddress` - String
-- `album` - ObjectId.
+- `albumId` - ObjectId.
 
 Você pode acessar esses valores através do `req.body`.
 
 A rota deve:
 
 - Criar um novo documento _purchase_ com os valores recebidos em `req.body`, utilizando o model `Purchase`.
-- A propriedade `album` deve guardar apenas a referencia do `_id` do objeto do album.
+- A propriedade `albumId` deve guardar apenas a referencia do `_id` do objeto do album.
 - Retornar uma response em `JSON` com o conteúdo da _purchase_ criada.
 
 ### 3.2 Crie a rota `GET /purchases/:purchaseId`
