@@ -1,11 +1,17 @@
 import { Schema, model } from "mongoose";
 
-const albumSchema = new Schema({
-  performer: { type: String },
-  title: { type: String },
-  cost: { type: Number },
+const album = new Schema({
+  performer: { 
+    type: String 
+  },
+  title: { 
+    type: String 
+  },
+  cost: { 
+    type: Number 
+  }
 });
 
-const AlbumModel = model("Album", albumSchema);
+const Album = model("Album", album);
 
-export default AlbumModel;
+export default Album;

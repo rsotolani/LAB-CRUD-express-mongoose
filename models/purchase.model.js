@@ -1,10 +1,15 @@
 import { Schema, model, Types } from "mongoose";
 
-const purchaseSchema = new Schema({
-  shippingAddress: { type: String },
-  album: { type: Types.ObjectId, ref: "Album" },
+const purchase = new Schema({
+  shippingAddress: { 
+    type: String 
+  },
+  album: { 
+    type: Types.ObjectId, 
+    ref: "Album" 
+  }
 });
 
-const PurchaseModel = model("Purchase", purchaseSchema);
+const Purchase = model("Purchase", purchase);
 
-export default PurchaseModel;
+export default Purchase;
