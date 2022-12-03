@@ -6,10 +6,11 @@ import purchaseRoutes from "./routes/purchase.router.js";
 const app = express();
 
 dotenv.config();
+
 connect();
+
 app.use(express.json());
 
-// SUAS ROTAS AQUI!!! v v v não esqueça de importá-las!
 app.use("/album", albumRoutes);
 app.use("/purchase", purchaseRoutes);
 
